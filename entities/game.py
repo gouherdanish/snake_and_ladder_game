@@ -7,7 +7,8 @@ class Game:
 
     def add_player(self,player):
         self.players.append(player)
-        player.setPlaying()
+        player.activate()
 
     def is_over(self):
         return self.numOf_active_players < 2
+    
