@@ -1,5 +1,5 @@
-from special_entity import SpecialEntity
-from entity_type import EntityType
+from entities.special_entity import SpecialEntity
+from entities.entity_type import EntityType
 
 class Snake(SpecialEntity):
     def __init__(self,start,end) -> None:

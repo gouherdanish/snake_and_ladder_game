@@ -14,10 +14,12 @@ if __name__ == '__main__':
     dice        = Dice()
     game        = Game(board,dice)
     
-    num_players = input('How many players ?')
-    for i in range():
+    num_players = int(input('How many players ?'))
+    for i in range(num_players):
         name = input(f'Player {i+1} name: ')
         player = Player(name)
         game.add_player(player)
     
     game.start()
+    game.set_rankings()
+    print(game.get_rankings())
