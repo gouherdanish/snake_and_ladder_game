@@ -18,7 +18,7 @@ class Game:
         rank = 0
         while not self.is_over():
             for player in self.players:
-                if player.is_playing() and not self.is_over():
+                if player.is_playing() and not self.is_over():        
                     try:
                         pos = player.get_pos()
                         roll = self.dice.roll()
@@ -34,7 +34,7 @@ class Game:
                     except Exception as e:
                         print(e)
     
-    def set_rankings(self):
+    def finish(self):
         max_rank = 0
         for player in self.players:
             player_rank = player.get_ranking()

@@ -21,5 +21,5 @@ if __name__ == '__main__':
         game.add_player(player)
     
     game.start()
-    game.set_rankings()
+    game.finish()
     print(game.get_rankings())
